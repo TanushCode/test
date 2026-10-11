@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanush | Full-Stack Software Engineer & Systems Architect</title>
+  <meta name="description" content="Personal portfolio of Tanush — Full-Stack Software Engineer specializing in resilient systems, distributed architecture, and human-centered design.">
+
+  <!-- Google Fonts: Libre Caslon Text & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Design System Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Atmospheric Glow Accents -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="brand-monogram">
+        <span class="brand-initial">T</span>
+        <span class="brand-name">Tanush<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <div class="status-pill" title="Current Status">
+          <span class="status-dot"></span>
+          <span class="status-text">Available for work</span>
+        </div>
+        <a href="#contact" class="btn btn-primary nav-cta">Get in Touch</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary w-full">Start a Project &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-header-box">
+          <div class="chip chip-blue">
+            <span class="chip-dot"></span>
+            FULL-STACK ENGINEERING &bull; SYSTEMS ARCHITECTURE
+          </div>
+
+          <h1 class="display-hero">
+            Building resilient, <span class="editorial-italic">human-centered</span> software with clarity and <span class="editorial-italic">lasting craft</span>.
+          </h1>
+
+          <p class="hero-lead">
+            I am a full-stack engineer and digital architect focused on developing robust, high-performance web systems, clean API ecosystems, and accessible user experiences that respect human attention.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Selected Works
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Let's Discuss an Opportunity
+            </a>
+            <button class="btn btn-tertiary" id="quickCopyEmailBtn" data-email="tanush@example.com">
+              <span class="copy-icon"></span>
+              <span id="quickCopyText">Copy Email</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- BENTO METRIC STATS ROW (from DESIGN.md) -->
+        <div class="stats-bento-grid">
+          <!-- Stat 1: Brand Blue -->
+          <div class="stat-card stat-blue">
+            <div class="stat-top">
+              <span class="stat-number">4+</span>
+              <span class="stat-badge">EXP</span>
+            </div>
+            <div class="stat-bottom">
+              <h3 class="stat-title">Years of Craft</h3>
+              <p class="stat-desc">Designing and deploying resilient web services and scalable interfaces.</p>
+            </div>
+          </div>
+
+          <!-- Stat 2: Amber -->
+          <div class="stat-card stat-amber">
+            <div class="stat-top">
+              <span class="stat-number">25+</span>
+              <span class="stat-badge">SHIPPED</span>
+            </div>
+            <div class="stat-bottom">
+              <h3 class="stat-title">Products Delivered</h3>
+              <p class="stat-desc">From prototype zero to production-grade architectures and user tools.</p>
+            </div>
+          </div>
+
+          <!-- Stat 3: Slate Teal -->
+          <div class="stat-card stat-teal">
+            <div class="stat-top">
+              <span class="stat-number">99.9%</span>
+              <span class="stat-badge">UPTIME</span>
+            </div>
+            <div class="stat-bottom">
+              <h3 class="stat-title">System Reliability</h3>
+              <p class="stat-desc">Prioritizing defensive coding, automated verification, and high availability.</p>
+            </div>
+          </div>
+
+          <!-- Stat 4: Terracotta -->
+          <div class="stat-card stat-terracotta">
+            <div class="stat-top">
+              <span class="stat-number">100k+</span>
+              <span class="stat-badge">USERS</span>
+            </div>
+            <div class="stat-bottom">
+              <h3 class="stat-title">Requests & Traffic</h3>
+              <p class="stat-desc">Serving real-world patient, developer, and institutional workflows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-intro">
+          <div class="chip chip-amber">ABOUT ME</div>
+          <h2 class="headline-xl">
+            Engineering with <span class="editorial-italic">deep purpose</span> and uncompromising standards.
+          </h2>
+          <p class="section-subtitle">
+            I believe software should feel as trustworthy and intentional as a well-bound book.
+          </p>
+        </div>
+
+        <div class="about-bento-grid">
+          <!-- Story Narrative Card -->
+          <div class="card card-story">
+            <div class="card-header-tag">PHILOSOPHY & PERSPECTIVE</div>
+            <h3 class="headline-md">
+              Bridging the gap between <span class="editorial-italic">low-level reliability</span> and high-order aesthetics.
+            </h3>
+            <p class="body-lg">
+              Over the last several years, I have worked across the entire development continuum—architecting fault-tolerant backend services, optimizing data pipelines, and crafting accessible, responsive user interfaces.
+            </p>
+            <p class="body-lg">
+              My engineering philosophy revolves around three core tenets: eliminate unnecessary friction, build for observability, and never sacrifice the user’s dignity for short-term expedience. Whether structuring relational schemas or fine-tuning CSS transitions, I treat software engineering as an exacting discipline.
+            </p>
+
+            <div class="philosophy-checklist">
+              <div class="check-item">
+                <span class="check-bullet">&bull;</span>
+                <div>
+                  <strong>Maintainable Architectures:</strong> Favoring clear composition, modular boundaries, and readable code over esoteric abstractions.
+                </div>
+              </div>
+              <div class="check-item">
+                <span class="check-bullet">&bull;</span>
+                <div>
+                  <strong>Empathetic Human UX:</strong> Ensuring accessibility (WCAG), tactile feedback, and intuitive information architecture across all viewports.
+                </div>
+              </div>
+              <div class="check-item">
+                <span class="check-bullet">&bull;</span>
+                <div>
+                  <strong>Defensive Reliability:</strong> Integrating strict types, automated unit tests, and graceful degradation for every edge condition.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills & Capabilities Card -->
+          <div class="card card-skills">
+            <div class="card-header-tag">TECHNICAL CAPABILITIES</div>
+            <h3 class="headline-md">Core Toolkit & Stack</h3>
+            <p class="body-md text-secondary">
+              Filter by engineering domain to inspect my active competencies:
+            </p>
+
+            <!-- Skill Filter Chips -->
+            <div class="skill-filter-bar">
+              <button class="filter-chip active" data-skill-category="all">All</button>
+              <button class="filter-chip" data-skill-category="frontend">Frontend</button>
+              <button class="filter-chip" data-skill-category="backend">Backend</button>
+              <button class="filter-chip" data-skill-category="database">Data & Cloud</button>
+              <button class="filter-chip" data-skill-category="tools">DevOps</button>
+            </div>
+
+            <!-- Skill Pills Grid -->
+            <div class="skills-cloud" id="skillsCloud">
+              <!-- Frontend -->
+              <span class="skill-tag" data-category="frontend">TypeScript</span>
+              <span class="skill-tag" data-category="frontend">JavaScript (ES6+)</span>
+              <span class="skill-tag" data-category="frontend">React.js</span>
+              <span class="skill-tag" data-category="frontend">Next.js</span>
+              <span class="skill-tag" data-category="frontend">Modern CSS3 / SCSS</span>
+              <span class="skill-tag" data-category="frontend">HTML5 & Semantic Web</span>
+              <span class="skill-tag" data-category="frontend">Tailwind CSS</span>
+              <span class="skill-tag" data-category="frontend">Web Accessibility (a11y)</span>
+              <span class="skill-tag" data-category="frontend">State Management (Redux/Zustand)</span>
+
+              <!-- Backend -->
+              <span class="skill-tag" data-category="backend">Node.js</span>
+              <span class="skill-tag" data-category="backend">Express.js</span>
+              <span class="skill-tag" data-category="backend">RESTful API Design</span>
+              <span class="skill-tag" data-category="backend">GraphQL</span>
+              <span class="skill-tag" data-category="backend">Python</span>
+              <span class="skill-tag" data-category="backend">FastAPI</span>
+              <span class="skill-tag" data-category="backend">WebSockets</span>
+
+              <!-- Database & Cloud -->
+              <span class="skill-tag" data-category="database">PostgreSQL</span>
+              <span class="skill-tag" data-category="database">MySQL</span>
+              <span class="skill-tag" data-category="database">MongoDB</span>
+              <span class="skill-tag" data-category="database">Redis</span>
+              <span class="skill-tag" data-category="database">Prisma ORM</span>
+              <span class="skill-tag" data-category="database">AWS (S3, EC2, Lambda)</span>
+
+              <!-- Tools & DevOps -->
+              <span class="skill-tag" data-category="tools">Git & GitHub Actions</span>
+              <span class="skill-tag" data-category="tools">Docker</span>
+              <span class="skill-tag" data-category="tools">Linux / Bash</span>
+              <span class="skill-tag" data-category="tools">Vite & Webpack</span>
+              <span class="skill-tag" data-category="tools">Jest & Playwright</span>
+              <span class="skill-tag" data-category="tools">CI/CD Pipelines</span>
+            </div>
+
+            <!-- Quick Highlight Tile -->
+            <div class="editorial-quote-box">
+              <span class="quote-symbol">&ldquo;</span>
+              <p class="quote-text">
+                Clean code is not simply code that works; it is code that tells a legible, humane story to the next engineer who encounters it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section bg-canvas-tinted">
+      <div class="container">
+        <div class="section-intro">
+          <div class="chip chip-teal">EXPERIENCE</div>
+          <h2 class="headline-xl">
+            Proven track record in <span class="editorial-italic">high-stakes</span> environments.
+          </h2>
+          <p class="section-subtitle">
+            A chronological timeline of roles where architectural rigor delivered measurable outcomes.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-badge-col">
+              <div class="timeline-marker"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <div class="role-title-row">
+                    <h3 class="role-title">Senior Full-Stack Developer</h3>
+                    <span class="pill-period">2023 &mdash; PRESENT</span>
+                  </div>
+                  <h4 class="company-name">Apex Distributed Solutions &bull; San Francisco, CA (Remote)</h4>
+                </div>
+              </div>
+
+              <p class="body-lg text-secondary">
+                Leading full-stack engineering initiatives across enterprise micro-frontends and high-throughput real-time communication microservices.
+              </p>
+
+              <ul class="achievement-list">
+                <li>
+                  Spearheaded migration of legacy monolith to modular TypeScript services, cutting bundle sizes by <strong>42%</strong> and improving initial page load to under 1.2s.
+                </li>
+                <li>
+                  Engineered distributed caching layer using Redis & memory pooling, reducing p99 API latencies from 320ms to <strong>45ms</strong> under peak load.
+                </li>
+                <li>
+                  Mentored a cohort of 6 junior and mid-level engineers in defensive programming practices, code review standards, and CI/CD automation.
+                </li>
+              </ul>
+
+              <div class="tech-pills-row">
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">AWS</span>
+                <span class="tech-pill">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-badge-col">
+              <div class="timeline-marker"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <div class="role-title-row">
+                    <h3 class="role-title">Full-Stack Software Engineer</h3>
+                    <span class="pill-period">2021 &mdash; 2023</span>
+                  </div>
+                  <h4 class="company-name">Horizon Health Tech &bull; Boston, MA</h4>
+                </div>
+              </div>
+
+              <p class="body-lg text-secondary">
+                Designed and maintained HIPAA-compliant digital patient engagement workflows, appointment engines, and diagnostic result delivery pipelines.
+              </p>
+
+              <ul class="achievement-list">
+                <li>
+                  Constructed end-to-end encrypted telemetry and messaging microservice serving over <strong>50,000+ active patients</strong> across 14 clinics.
+                </li>
+                <li>
+                  Engineered automated fault recovery and client-side offline retry mechanisms, maintaining <strong>99.98% availability</strong> during cloud outages.
+                </li>
+                <li>
+                  Collaborated directly with clinical stakeholders to refine medical chart visualizations and laboratory reporting modules.
+                </li>
+              </ul>
+
+              <div class="tech-pills-row">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">WebSockets</span>
+                <span class="tech-pill">HIPAA Security</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Jest</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-badge-col">
+              <div class="timeline-marker"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <div class="role-title-row">
+                    <h3 class="role-title">Frontend Software Engineer</h3>
+                    <span class="pill-period">2020 &mdash; 2021</span>
+                  </div>
+                  <h4 class="company-name">Studio Craft Interactive &bull; New York, NY</h4>
+                </div>
+              </div>
+
+              <p class="body-lg text-secondary">
+                Authored bespoke web applications, design systems, and data-dense interactive analytics dashboards for high-growth clients.
+              </p>
+
+              <ul class="achievement-list">
+                <li>
+                  Created comprehensive accessible UI component library adhering strictly to WCAG 2.1 AA specifications.
+                </li>
+                <li>
+                  Improved client Core Web Vitals across 8 flagship web properties, raising average Lighthouse scores from 68 to <strong>96+</strong>.
+                </li>
+              </ul>
+
+              <div class="tech-pills-row">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">CSS Architecture</span>
+                <span class="tech-pill">GraphQL</span>
+                <span class="tech-pill">Webpack</span>
+                <span class="tech-pill">Figma Tokens</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header-flex">
+          <div class="section-intro">
+            <div class="chip chip-periwinkle">PROJECTS</div>
+            <h2 class="headline-xl">
+              Selected works built for <span class="editorial-italic">scale and longevity</span>.
+            </h2>
+            <p class="section-subtitle">
+              Interactive systems, developer tools, and customer-facing applications built from the ground up.
+            </p>
+          </div>
+
+          <!-- Project Filter Tabs -->
+          <div class="project-filter-tabs">
+            <button class="project-filter-btn active" data-filter="all">All Projects</button>
+            <button class="project-filter-btn" data-filter="fullstack">Full-Stack</button>
+            <button class="project-filter-btn" data-filter="systems">Systems & Tools</button>
+            <button class="project-filter-btn" data-filter="ui">Design Systems</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-banner">
+              <span class="project-kicker">HEALTHCARE ECOSYSTEM</span>
+              <span class="pill-tag pill-tag-blue">PRODUCTION</span>
+            </div>
+
+            <h3 class="project-title">MediCare+ CareConnect Portal</h3>
+            <p class="project-description">
+              A comprehensive patient portal and clinical records platform featuring real-time appointment booking, automated prescription renewals, and verified lab telemetry.
+            </p>
+
+            <div class="project-metrics-box">
+              <div class="metric-mini">
+                <span class="metric-mini-val">50k+</span>
+                <span class="metric-mini-label">Active Patients</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">&lt;80ms</span>
+                <span class="metric-mini-label">Sync Latency</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">100%</span>
+                <span class="metric-mini-label">HIPAA Compliant</span>
+              </div>
+            </div>
+
+            <div class="tech-pills-row">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">WebSockets</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="link-tertiary">
+                Request Case Study <span class="arrow-glyph">&rarr;</span>
+              </a>
+              <span class="project-role-badge">Lead Architect</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="systems">
+            <div class="project-card-banner">
+              <span class="project-kicker">DEVELOPER INFRASTRUCTURE</span>
+              <span class="pill-tag pill-tag-amber">OPEN SOURCE</span>
+            </div>
+
+            <h3 class="project-title">PATCHWORK Live Hotfix Runtime</h3>
+            <p class="project-description">
+              A surgical runtime injection engine enabling visual CSS overrides, behavioral script patching, and mock API circuit-breakers on production web applications without rebuild cycles.
+            </p>
+
+            <div class="project-metrics-box">
+              <div class="metric-mini">
+                <span class="metric-mini-val">0s</span>
+                <span class="metric-mini-label">Downtime Needed</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">92%</span>
+                <span class="metric-mini-label">Healing Accuracy</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">4.2kb</span>
+                <span class="metric-mini-label">Gzipped Size</span>
+              </div>
+            </div>
+
+            <div class="tech-pills-row">
+              <span class="tech-pill">Vanilla JS</span>
+              <span class="tech-pill">MutationObserver</span>
+              <span class="tech-pill">CSSOM</span>
+              <span class="tech-pill">Fetch Proxy</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="link-tertiary">
+                Inspect Source & Architecture <span class="arrow-glyph">&rarr;</span>
+              </a>
+              <span class="project-role-badge">Creator</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="systems">
+            <div class="project-card-banner">
+              <span class="project-kicker">DISTRIBUTED SYSTEMS</span>
+              <span class="pill-tag pill-tag-teal">HIGH PERFORMANCE</span>
+            </div>
+
+            <h3 class="project-title">Vesper Distributed Cache & Raft Sync</h3>
+            <p class="project-description">
+              In-memory distributed key-value store featuring persistent WAL journaling, Raft cluster consensus, and sub-millisecond response guarantees for high-concurrency read replicas.
+            </p>
+
+            <div class="project-metrics-box">
+              <div class="metric-mini">
+                <span class="metric-mini-val">1.2M</span>
+                <span class="metric-mini-label">Ops / Second</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">Raft</span>
+                <span class="metric-mini-label">Consensus Protocol</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">&lt;2ms</span>
+                <span class="metric-mini-label">Cluster Sync</span>
+              </div>
+            </div>
+
+            <div class="tech-pills-row">
+              <span class="tech-pill">Go</span>
+              <span class="tech-pill">gRPC</span>
+              <span class="tech-pill">Raft</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Prometheus</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="link-tertiary">
+                View Benchmarks <span class="arrow-glyph">&rarr;</span>
+              </a>
+              <span class="project-role-badge">Systems Engineer</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="ui">
+            <div class="project-card-banner">
+              <span class="project-kicker">DESIGN SYSTEMS & FRONTEND</span>
+              <span class="pill-tag pill-tag-periwinkle">ACCESSIBLE</span>
+            </div>
+
+            <h3 class="project-title">Warm Editorial Design System</h3>
+            <p class="project-description">
+              A bespoke, accessible design system marrying Libre Caslon Text editorial serif typography with dark tactile minimalism, high-contrast energetic accents, and semantic token sets.
+            </p>
+
+            <div class="project-metrics-box">
+              <div class="metric-mini">
+                <span class="metric-mini-val">AAA</span>
+                <span class="metric-mini-label">WCAG Contrast</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">40+</span>
+                <span class="metric-mini-label">Reusable Tokens</span>
+              </div>
+              <div class="metric-mini">
+                <span class="metric-mini-val">0 Dep</span>
+                <span class="metric-mini-label">Native CSS Variables</span>
+              </div>
+            </div>
+
+            <div class="tech-pills-row">
+              <span class="tech-pill">CSS Custom Properties</span>
+              <span class="tech-pill">Semantic HTML</span>
+              <span class="tech-pill">Accessibility</span>
+              <span class="tech-pill">Vanilla JS</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="link-tertiary">
+                Explore Component Library <span class="arrow-glyph">&rarr;</span>
+              </a>
+              <span class="project-role-badge">Design Technologist</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section bg-canvas-tinted">
+      <div class="container">
+        <div class="section-intro">
+          <div class="chip chip-sage">EDUCATION & CREDENTIALS</div>
+          <h2 class="headline-xl">
+            Foundational knowledge <span class="editorial-italic">continually honed</span>.
+          </h2>
+          <p class="section-subtitle">
+            Formal computer science training complemented by continuous specialized certifications.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1 -->
+          <div class="card edu-card">
+            <div class="edu-card-top">
+              <div class="edu-badge-icon">&hearts;</div>
+              <span class="pill-period">2018 &mdash; 2022</span>
+            </div>
+
+            <h3 class="headline-md edu-title">
+              Bachelor of Technology in Computer Science & Engineering
+            </h3>
+            <h4 class="edu-institution">Institute of Engineering & Technology</h4>
+            <p class="body-md text-secondary edu-desc">
+              Graduated with First Class Distinction. Focused study in distributed computing, relational database theory, network architectures, and algorithm design.
+            </p>
+
+            <div class="coursework-box">
+              <strong class="coursework-label">Key Coursework:</strong>
+              <div class="course-tags">
+                <span class="course-tag">Data Structures & Algorithms</span>
+                <span class="course-tag">Operating Systems</span>
+                <span class="course-tag">Computer Networks</span>
+                <span class="course-tag">Database Management</span>
+                <span class="course-tag">Software Engineering</span>
+                <span class="course-tag">Human-Computer Interaction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Honors & Certifications Bento -->
+          <div class="edu-side-bento">
+            <!-- Cert 1 -->
+            <div class="card edu-subcard">
+              <div class="subcard-header">
+                <span class="chip chip-blue">CERTIFICATION</span>
+                <span class="text-muted text-sm">2023</span>
+              </div>
+              <h4 class="subcard-title">AWS Certified Solutions Architect</h4>
+              <p class="body-md text-secondary">
+                Validated expertise in architecting resilient, secure, and cost-effective distributed systems on Amazon Web Services.
+              </p>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="card edu-subcard">
+              <div class="subcard-header">
+                <span class="chip chip-amber">ACHIEVEMENT</span>
+                <span class="text-muted text-sm">2022</span>
+              </div>
+              <h4 class="subcard-title">1st Place &bull; National Hackathon</h4>
+              <p class="body-md text-secondary">
+                Designed and built a distributed emergency coordination platform under a 36-hour sprint, evaluated by industry leaders.
+              </p>
+            </div>
+
+            <!-- Continuous learning -->
+            <div class="card edu-subcard">
+              <div class="subcard-header">
+                <span class="chip chip-teal">SPECIALIZATION</span>
+                <span class="text-muted text-sm">Ongoing</span>
+              </div>
+              <h4 class="subcard-title">Distributed Systems & Security</h4>
+              <p class="body-md text-secondary">
+                Continuous engagement with current research papers, RFCs, and open-source contributions in systems engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-intro">
+          <div class="chip chip-terracotta">GET IN TOUCH</div>
+          <h2 class="headline-xl">
+            Let's start a <span class="editorial-italic">meaningful</span> conversation.
+          </h2>
+          <p class="section-subtitle">
+            Whether you have an ambitious product to build, an architectural challenge to solve, or an engineering role to discuss—I would love to connect.
+          </p>
+        </div>
+
+        <div class="contact-bento-layout">
+          <!-- Left: Direct Info & Socials -->
+          <div class="contact-info-panel card">
+            <h3 class="headline-md">Direct Coordinates</h3>
+            <p class="body-lg text-secondary">
+              I am currently open to high-impact software engineering roles, technical advisory, and collaborative projects.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-row">
+                <div class="contact-icon-box">@</div>
+                <div>
+                  <span class="contact-label">EMAIL ADDRESS</span>
+                  <a href="mailto:tanush.dev@example.com" class="contact-val">tanush.dev@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-icon-box">&map;</div>
+                <div>
+                  <span class="contact-label">LOCATION & TIMEZONE</span>
+                  <span class="contact-val">India (UTC +5:30) &bull; Remote Available Worldwide</span>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-icon-box">&bull;</div>
+                <div>
+                  <span class="contact-label">CURRENT AVAILABILITY</span>
+                  <span class="contact-val text-accent-teal">Open for Full-time Roles & Contracts</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-block">
+              <span class="contact-label mb-2">NETWORK PROFILES</span>
+              <div class="social-pills-row">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  GitHub &nearr;
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  LinkedIn &nearr;
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  Twitter / X &nearr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Direct Email Action Banner -->
+            <div class="direct-email-banner">
+              <div>
+                <strong>Prefer direct email?</strong>
+                <p class="text-secondary text-sm">One-click copy to your clipboard</p>
+              </div>
+              <button class="btn btn-secondary btn-sm" id="copyEmailCardBtn">
+                <span id="copyEmailCardText">Copy tanush.dev@example.com</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel card">
+            <h3 class="headline-md">Send a Message</h3>
+            <p class="body-md text-secondary mb-4">
+              Fill out the details below and I will get back to you within 24 hours.
+            </p>
+
+            <!-- Success alert banner (hidden initially) -->
+            <div class="form-alert form-alert-success" id="formSuccessAlert" role="alert" aria-live="polite">
+              <span class="alert-icon">&check;</span>
+              <div>
+                <strong>Message Dispatched Successfully!</strong>
+                <p>Thank you for reaching out. I've received your note and will reply promptly.</p>
+              </div>
+            </div>
+
+            <form id="portfolioContactForm" novalidate>
+              <div class="form-grid">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name <span class="required-star">*</span></label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    class="form-control"
+                    placeholder="e.g. Eleanor Vance"
+                    required
+                    autocomplete="name"
+                  >
+                  <span class="field-error-msg" id="nameError">Please enter your name.</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    class="form-control"
+                    placeholder="e.g. eleanor@company.com"
+                    required
+                    autocomplete="email"
+                  >
+                  <span class="field-error-msg" id="emailError">Please provide a valid email address.</span>
+                </div>
+              </div>
+
+              <!-- Subject / Purpose -->
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Project Inquiries / Subject <span class="required-star">*</span></label>
+                <select id="contactSubject" name="subject" class="form-control" required>
+                  <option value="" disabled selected>Select an inquiry category...</option>
+                  <option value="fulltime">Full-Time Engineering Role</option>
+                  <option value="contract">Contract / Consulting Engagement</option>
+                  <option value="architecture">System Architecture Advisory</option>
+                  <option value="collaboration">Open Source & Collaboration</option>
+                  <option value="other">General Inquiries / Coffee Chat</option>
+                </select>
+                <span class="field-error-msg" id="subjectError">Please select an inquiry topic.</span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <div class="label-char-flex">
+                  <label for="contactMessage" class="form-label">Your Message <span class="required-star">*</span></label>
+                  <span class="char-count" id="charCounter">0 / 1000</span>
+                </div>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="5"
+                  class="form-control"
+                  placeholder="Tell me about your goals, timelines, or technical specifications..."
+                  maxlength="1000"
+                  required
+                ></textarea>
+                <span class="field-error-msg" id="messageError">Please write a brief message (at least 10 characters).</span>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-submit" id="submitFormBtn">
+                  <span class="btn-text">Transmit Message</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                  <span class="btn-arrow">&rarr;</span>
+                </button>
+                <span class="privacy-note">
+                  &bull; No spam. Information held in strict confidence.
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand-col">
+        <a href="#hero" class="brand-monogram">
+          <span class="brand-initial">T</span>
+          <span class="brand-name">Tanush<span class="brand-dot">.</span></span>
+        </a>
+        <p class="footer-tagline">
+          Warm Editorial engineering &bull; Built with intention, precision, and care.
+        </p>
+      </div>
+
+      <div class="footer-nav-col">
+        <span class="footer-heading">NAVIGATION</span>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-connect-col">
+        <span class="footer-heading">CONNECT</span>
+        <ul class="footer-links">
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:tanush.dev@example.com">Direct Email</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-top-col">
+        <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+          &uarr; Top
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <div class="copyright-text">
+        &copy; <span id="currentYear"></span> Tanush. All rights reserved.
+      </div>
+      <div class="design-system-credit">
+        Designed per <span class="editorial-italic">Warm Editorial Healthcare</span> design specifications.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for interactive feedbacks -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
